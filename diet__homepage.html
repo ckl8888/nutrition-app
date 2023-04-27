@@ -18,22 +18,24 @@
         <button type="button" onclick="makeCorsRequest()">Search</button>
         <br>
         Result:
-        <pre id="response"> </pre>
         <br>
         <p id="table_1"></p>
         <table >
             <tr>
-                <th>Food</th>
                 <th id="name">Name</th>
             </tr>
             <tr>
-                <td>Calories</td>
-                <td id="calories"> </td>
+                <td>Amount per</td>
             </tr>
             <tr>
                 <td>Weight (g)</td>
                 <td id="Weight"> </td>
             </tr>
+            <tr>
+                <td>Calories</td>
+                <td id="calories"> </td>
+            </tr>
+
             <tr>
                 <td>Total Fat</td>
                 <td id="tFat"></td>
@@ -43,16 +45,16 @@
                 <td id="tSat"></td>
             </tr>
             <tr>
+                <td>Trans Fat</td>
+                <td id="transFat"></td>
+            </tr>
+            <tr>
                 <td>Cholesterol</td>
-                <td></td>
+                <td id="chol"></td>
             </tr>
             <tr>
                 <td>Sodium</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Potassium</td>
-                <td></td>
+                <td id="na"></td>
             </tr>
             <tr>
                 <td>Total Carbohydrate</td>
@@ -63,7 +65,7 @@
                 <td id="dfiber"></td>
             </tr>
             <tr>
-                <td>Sugar</td>
+                <td>Sugars</td>
                 <td id="sugar"></td>
             </tr>
             <tr>
@@ -71,42 +73,37 @@
                 <td id="prot"></td>
             </tr>
             <tr>
-                <td>Iron</td>
-                <td></td>
-            </tr>
-            <tr>
                 <td>Vitamin A</td>
-                <td></td>
+                <td id="vitA"></td>
             </tr>
             <tr>
                 <td>Vitamin C</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Vitamin B</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Vitamin D</td>
-                <td></td>
+                <td id="vitC"></td>
             </tr>
             <tr>
                 <td>Calcium</td>
-                <td></td>
+                <td id="ca"></td>
             </tr>
+            <tr>
+                <td>Iron</td>
+                <td id="fe"></td>
+            </tr>
+            <tr>
+                <td>Vitamin D</td>
+                <td id="vitD"></td>
+            </tr>
+
             <tr>
                 <td>Magnesium</td>
-                <td></td>
+                <td id="mg"></td>
             </tr>
             <tr>
-                <td>Cobalamin</td>
-                <td></td>
+                <td>Potassium</td>
+                <td id="pot"></td>
             </tr>
         </table>
+        <p>
+            <button type="button" onclick="addFood()">Add to diary</button>
+        </p>
     </body>
 </html>
-
-
-
-
- 
